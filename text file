@@ -1,0 +1,28 @@
+Access Key ID:
+AKIA47RFSJS4IL3EU5LV
+Secret Access Key:
+AKglWvsNr9iKWTbHqn12SBFxffQ0d+O6FgWjj83E
+
+
+Tasks 
+
+1. Create following resources using Terraform
+- VPC
+- 2 Public Subnets
+- 2 Privatre subents
+- EC2 Launch Template
+- Auto Scaling Group of EC2 Machine with Latest AWS image
+- Application Load Balancer for above auto scaling group
+- MySQL RDS 
+- Relevant security groups
+- SNS Topic and subscription
+- Cloudwatch CPU and RAM utilization metric and Alert (Alerts should be sent to SNS Topic subscribers)
+- Web instances should be in one of the Private subnets
+- RDS Should not be publicly accessible
+- Use remote state file
+
+2. Deploy a sample application with Ansible
+- Application should be deployed on auto scaling group created in previous step
+- MySQL database connection should happen
+
+Follow best practices while creating infrastructure.
